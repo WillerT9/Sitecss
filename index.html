@@ -27,9 +27,40 @@
         <div id="frescura1">
             <br>
             <br>
-            <div class="button4">
-                🔍Pesquisar
+            <div id="divBusca">
+                <input type="text" id="txtBusca" placeholder="Pesquise" />
+                <button onclick="pesquisarArtigo()">  <img  src="lupa.png" id="btnBusca" alt="Buscar" width="10" height="10"/></button>
             </div>
+            <script>
+                function pesquisarArtigo() {
+                    
+                    var termoPesquisa = document.getElementById("txtBusca").value.toLowerCase();
+                    console.log(termoPesquisa)
+                    
+                    if (termoPesquisa === "gustavo") {
+                        
+                        window.location.href = "page1.html";
+                    }
+                    
+                    else if (termoPesquisa === "l") {
+                        
+                        window.location.href = "page2.html";
+                    } else {
+                        
+                        alert("Artigo não encontrado.");
+                    }
+                }
+       
+                
+                document.getElementById("txtBusca").addEventListener("keyup", function(event) {
+                    
+                    if (event.keyCode === 13) {
+                        
+                        pesquisarArtigo();
+                    }
+                });
+       
+            </script>
         </div>    
         <div id="cabecalho"> 
             <br>
