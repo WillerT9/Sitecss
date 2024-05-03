@@ -27,9 +27,10 @@
         <div id="frescura1">
             <br>
             <br>
-            <div id="divBusca">
-                <input type="text" id="txtBusca" placeholder="Pesquise" />
-                <button onclick="pesquisarArtigo()">  <img  src="lupa.png" id="btnBusca" alt="Buscar" width="10" height="10"/></button>
+            <div id="divBusca"><center>
+                <input type="text" id="txtBusca" placeholder="Pesquise"  />
+                <button onclick="pesquisarArtigo()">  <img  src="lupa.png" id="btnBusca" alt="Buscar" width="30" height="15"/></button>
+            </center>
             </div>
             <script>
                 function pesquisarArtigo() {
@@ -45,6 +46,11 @@
                     else if (termoPesquisa === "l") {
                         
                         window.location.href = "page2.html";
+                    
+                    if (termoPesquisa === "segunda guerra mundial") {
+
+                        <a href="https://pt.wikipedia.org/wiki/Segunda_Guerra_Mundial">Clique para acessar</a>
+                    }
                     } else {
                         
                         alert("Artigo não encontrado.");

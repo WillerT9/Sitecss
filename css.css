@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+#cabecalho{
+    width: 100%;
+    height: 20%;
+    background-color: blueviolet;
+    text-align: center;
+}
+
+#menu{
+    width: 100%;
+    height: 25px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+#conteudo{
+    width: 75.5%;
+    height: 600px;
+    background-color: aquamarine;
+    margin-left: 5px;
+    margin-right: 2px;
+    float: left;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+#fonte{
+    background-color: rgb(66, 147, 234);
+    width: 75%;
+    height: 400px;
+    justify-content: center;
+    display: flex;
+    float: left;
+    margin: 0 auto;
+}
+
+#conteudo2{
+    width: 23.5%;
+    height: 100px;
+    background-color: brown;
+    margin-left: 5px;
+    margin-block-end: 10px;
+    float: left;
+}
+
+.button{
+    border-radius: 7%;
+    width: 23%;
+    height: 23px;
+    display: flex;
+    background-color: fuchsia; 
+    display: inline-block;
+    text-align: center;  
+    justify-content: center;
+    margin: 0 auto;
+}
+
+
+#container {
+    width: 23.5%;
+    height: 100px;
+    background-color: rgb(37, 79, 156);
+    margin-left: 5px;
+    margin-block-end: 10px;
+    float: left;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.game-container {
+    width: 75%;
+    height: 399px;
+    position: relative;
+    border: 1px solid black;
+    justify-content: center;
+    display: flex;
+}
+
+#snake {
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    position: absolute;
+}
+
+#snake, #food {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+}
+
+#food {
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    position: absolute;
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
